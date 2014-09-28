@@ -3,7 +3,7 @@ package com.example.macros
 import scala.language.experimental.macros
 import scala.reflect.macros.whitebox.Context
 
-object helloMacro {
+object HelloMacro {
   def impl(c: Context)(annottees: c.Expr[Any]*): c.Expr[Any] = {
     import c.universe._
 

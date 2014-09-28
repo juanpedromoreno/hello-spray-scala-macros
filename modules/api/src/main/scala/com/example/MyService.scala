@@ -1,7 +1,7 @@
 package com.example
 
 import akka.actor.Actor
-import com.example.macros.hello
+import com.example.macros.Hello
 import spray.routing._
 import spray.http._
 import MediaTypes._
@@ -21,7 +21,7 @@ class MyServiceActor extends Actor with MyService {
 }
 
 
-@hello
+@Hello
 trait MyService extends HttpService {
 
   val myRoute =
