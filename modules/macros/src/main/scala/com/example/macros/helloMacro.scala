@@ -12,7 +12,7 @@ object helloMacro {
         case q"trait $name extends ..$parents { ..$body }" :: Nil =>
           q"""
             trait $name extends ..$parents {
-              def hello: ${typeOf[String]} = "hello from a macro ;)"
+              def hello: ${typeOf[String]} = "hello from a scala macro ;)"
               ..$body
             }
           """
