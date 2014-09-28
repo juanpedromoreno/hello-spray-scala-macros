@@ -1,6 +1,6 @@
 # Spray services annotated with Scala Macros
 
-This simple app is a getting started with spray and scala macros.
+This simple app is a getting started with spray and scala macros. 
 
 ## Annotate with @hello
 
@@ -70,4 +70,12 @@ The macro implementation:
     
 ## Usage
 
-``
+In the project root, run:
+
+```bash
+./activator ";project api;compile;run"
+```
+
+That's it. Now, you can check the service: 
+
+`http://127.0.0.1:8080`
